@@ -1,0 +1,103 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jacques-Louis David: Portrait of an Artist</title>
+    <style>
+      .container {
+        border: 1px blue;
+        padding: 8px;
+        margin: 8px;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/1024px-David_Self_Portrait.jpg"
+      width="400"
+      height="500"
+      <figcaption>
+        
+        This is a portrait of Jacques-Louis David.
+      </figcaption>
+    </div>
+    <h1>Jacques-Louis David</h1>
+    <div class="topnav">
+      <a href="#biography">Biography</a>
+      <a href="#selectedworks">Selected Works</a>
+      <a href="#relatedartists">Related Artists</a>
+    </div>
+    <h2>Biography</h2>
+      <p>
+        Here is the biography of the artist.
+      </p>
+    <h2>Selected Works</h2>
+      <p>
+        Here is a list of the artist's selected works.
+      </p>
+    <h2>Related Artists</h2>
+      <p>
+        Here is a list of related artists.
+      </p>
+      <div class="container">
+        <form action="" method="get">
+          <label for="museum">Choose a museum:</label>
+          <select name="museum" id="museum">
+            <option value="museedulouvre">Musee du Louvre</option>
+            <option value="metropolitan">Metropolitan Museum of Art</option>
+            <option value="nationalportraitgallery">National Portrait Gallery</option>
+            <option value="nationalgalleryofart">National Gallery of Art</option>
+            </select>
+          <label for="country">Choose a country:</label>
+          <select name="country" id="country">
+            <option value="france">France</option>
+            <option value="unitedkingdom">United Kingdom</option>
+            <option value="unitedstates">United States</option>
+          </select>
+          <input type="submit" value="Submit">
+        </form>
+      <div class="container">
+        <footer>
+          <p>Author: Spencer W</p>
+          <p><a href="mailto:sawrtist@example.com">sawrtist@example.com</a></p>
+        </footer>
+      </div>
+  </body>
+</html>
